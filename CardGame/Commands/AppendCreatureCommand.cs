@@ -4,18 +4,17 @@ using System.Text;
 
 namespace CardGame.Commands
 {
-    public class AppendCreatureCommand : ICommand
-    {
-        private Creature _creature;
+	public class AppendCreatureCommand : ICommand
+	{
+		private Creature _creature;
 
-        public AppendCreatureCommand(Creature creature)
-        {
-            _creature = creature;
-        }
-
-        public void Execute(Board board)
-        {
-            board.Append(_creature);
-        }
-    }
+		public AppendCreatureCommand(Creature creature)
+		{
+			_creature = creature;
+		}
+		
+		public void Execute(Board board)
+		{
+		}
+	}
 }

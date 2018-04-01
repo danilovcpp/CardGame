@@ -4,8 +4,8 @@ using System.Text;
 
 namespace CardGame
 {
-    public interface ICommand
-    {
-        void Execute(Board board);
-    }
+	public interface ICommand
+	{
+		void Execute(Board board);
+	}
 }

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace CardGame
 {
-	public class Board
+	interface IPlayable
 	{
-
+		ICollection<ICommand> Play();
 	}
 }

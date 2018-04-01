@@ -4,8 +4,10 @@ using System.Text;
 
 namespace CardGame
 {
-    public abstract class Card
-    {
-        public abstract List<ICommand> Play();
-    }
+	public class Card
+	{
+		public int Cost { get; private set; }
+		public int Rarity { get; private set; }
+		public ICollection<ICommand> Commands { get; private set; }
+	}
 }
